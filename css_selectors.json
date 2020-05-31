@@ -1,0 +1,11 @@
+{
+    "Cumulative Cases To Date":"div.row:nth-child(8) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h1:nth-child(1)",
+    "Cases Reported Today":"div.row:nth-child(8) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > h1:nth-child(1)",
+    "Cumulative Deaths To Date":"div.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h1:nth-child(1)",
+    "Deaths Reported Today":"div.row:nth-child(10) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > h1:nth-child(1)",
+    "Cumulative Tests To Date":"div.row:nth-child(12) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h1:nth-child(1)",
+    "Tests Reported Today":"div.row:nth-child(12) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > h1:nth-child(1)",
+    "Cases Currently Hospitalized":"div.row:nth-child(14) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h1:nth-child(1)",
+    "Cases Currently in ICU":"div.row:nth-child(14) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > h1:nth-child(1)",
+    "Cumulative Recovered To Date":"div.col-md-8:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h1:nth-child(1)"
+}
