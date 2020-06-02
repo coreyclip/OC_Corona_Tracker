@@ -2,40 +2,55 @@ import json
 from pprint import pprint
 import requests
 from bs4 import BeautifulSoup
+import logging
+from datetime import datetime as dt
+from etl import DataHandler
+
+logger = logging.getLogger(__name__)
+f_handler = logging.FileHandler('scraper.log')
+f_handler.setLevel(logging.WARNING)
+
+logger.addHandler(f_handler)
+
 with open('css_selectors.json', 'r') as mappings:
     css_maps = json.load(mappings)
 
+data_handler = DataHandler()
+
 r = requests.get('https://occovid19.ochealthinfo.com/coronavirus-in-oc')
 if r.status_code == 200:
-    print('successful request')
+    logger.info(f'successful request: {dt.now().strftime("%c")}')
     html = r.text
     soup = BeautifulSoup(''.join(html), 'html.parser')
-    # print('--- Whole Soup ---') 
-    # print(soup.prettify())
-    # print('---- Scripts ----')
-    # print(soup.findAll('script'))
     data = {}
     for key, selector in css_maps.items():
         try:
-            data[key]  = soup.select_one(selector).text
+            data[key] = soup.select_one(selector).text
         except Exception as e:
-            print(key)
-            print(str(e))
+            logger.error("exception occured", exc_info=True)
+            logger.error('update selector for ' + key)
+    data['timestamp'] = dt.now().strftime('%c')
+    print(data)
+    data_handler.append_data(data)
+
     table = soup.find("table").find("tbody")
     try:
         rows = table.find_all('tr')
         for row in rows:
             cells = row.find_all('td')
-            city = cells[0].text
-            data[city] = {}
-            data[city]['population'] = cells[1].text
-            data[city]['cases'] = cells[2].text
-    except Exception as e:
-        print(str(e))
+            city_data = {}
+            city_data['city'] = cells[0].text
+            city_data['population'] = cells[1].text
+            city_data['cases'] = cells[2].text
+            city_data['timestamp'] = dt.now().strftime('%c')
+            data_handler.append_data(city_data)
 
-    pprint(data)
+        data_handler.save_data()
+    except Exception as e:
+        raise e
+        logger.error("exception occured", exc_info=True)
 
 
 else:
-    print('could not access site')
-    print(r.status_code)
+    logger.error(f'could not access site status code: {r.status_code}')
+

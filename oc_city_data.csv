@@ -1,0 +1,44 @@
+city,population,cases,timestamp
+CITY,POPULATION1,TOTAL CASES,Tue Jun  2 00:13:05 2020
+Aliso Viejo,"51,372",29,Tue Jun  2 00:13:05 2020
+Anaheim,"359,339",1099,Tue Jun  2 00:13:05 2020
+Brea,"45,606",42,Tue Jun  2 00:13:05 2020
+Buena Park,"83,384",173,Tue Jun  2 00:13:05 2020
+Costa Mesa,"115,830",123,Tue Jun  2 00:13:05 2020
+Coto de Caza,"14,931",6,Tue Jun  2 00:13:05 2020
+Cypress,"49,833",77,Tue Jun  2 00:13:05 2020
+Dana Point,"34,249",29,Tue Jun  2 00:13:05 2020
+Fountain Valley,"56,652",61,Tue Jun  2 00:13:05 2020
+Fullerton,"142,824",215,Tue Jun  2 00:13:05 2020
+Garden Grove,"175,155",350,Tue Jun  2 00:13:05 2020
+Huntington Beach,"203,761",348,Tue Jun  2 00:13:05 2020
+Irvine,"280,202",198,Tue Jun  2 00:13:05 2020
+La Habra,"63,542",116,Tue Jun  2 00:13:05 2020
+La Palma,"15,820",22,Tue Jun  2 00:13:05 2020
+Ladera Ranch,"30,288",14,Tue Jun  2 00:13:05 2020
+Laguna Beach,"23,358",46,Tue Jun  2 00:13:05 2020
+Laguna Hills,"31,572",32,Tue Jun  2 00:13:05 2020
+Laguna Niguel,"66,748",39,Tue Jun  2 00:13:05 2020
+Laguna Woods,"16,518",9,Tue Jun  2 00:13:05 2020
+Lake Forest,"86,346",66,Tue Jun  2 00:13:05 2020
+Los Alamitos,"11,721",80,Tue Jun  2 00:13:05 2020
+Midway City,"8,374",16,Tue Jun  2 00:13:05 2020
+Mission Viejo,"96,434",76,Tue Jun  2 00:13:05 2020
+Newport Beach,"87,180",144,Tue Jun  2 00:13:05 2020
+Orange,"141,691",288,Tue Jun  2 00:13:05 2020
+Placentia,"52,333",127,Tue Jun  2 00:13:05 2020
+Rancho Mission Viejo,Not Available,8,Tue Jun  2 00:13:05 2020
+Rancho Santa Margarita,"48,960",22,Tue Jun  2 00:13:05 2020
+San Clemente,"65,405",68,Tue Jun  2 00:13:05 2020
+San Juan Capistrano,"36,821",56,Tue Jun  2 00:13:05 2020
+Santa Ana,"337,716",1246,Tue Jun  2 00:13:05 2020
+Seal Beach,"25,073",23,Tue Jun  2 00:13:05 2020
+Stanton,"39,307",81,Tue Jun  2 00:13:05 2020
+Trabuco Canyon,Not Available,15,Tue Jun  2 00:13:05 2020
+Tustin,"81,369",103,Tue Jun  2 00:13:05 2020
+Villa Park,"5,933",8,Tue Jun  2 00:13:05 2020
+Westminster,"92,610",134,Tue Jun  2 00:13:05 2020
+Yorba Linda,"68,706",79,Tue Jun  2 00:13:05 2020
+Other*,,383,Tue Jun  2 00:13:05 2020
+Unknown**,,423,Tue Jun  2 00:13:05 2020
+All of Orange County,"3,222,498","6,474",Tue Jun  2 00:13:05 2020
